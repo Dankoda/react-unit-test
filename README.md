@@ -227,7 +227,7 @@ doubleAsync
     })
   })
 ```
-
+## 最終確認  
 ```bash
 $ npm run test
 
