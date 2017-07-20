@@ -60,7 +60,7 @@ open HomeView.spec.js (tests/routes/Home/components/HomeView.js)
 
 enyzmeの`render`メソッドを使ってcomponent のrenderテスト  
 
-**必要なものをimport**
+**必要なものをimport**  
 ```js
   //HomeView.spec.js
 
@@ -69,8 +69,8 @@ enyzmeの`render`メソッドを使ってcomponent のrenderテスト
   import { render } from 'enzyme'
 ```
 
-**フック**
-beforeEach: 毎回のテストがされる前に呼ばれる。
+**フック**  
+beforeEach: 毎回のテストがされる前に呼ばれる。  
 ```js
   describe('(Componnet) Home', () => {
     let _wrapper
@@ -140,7 +140,7 @@ enzymeのshallowメソッドを使って、componentのレンダーとイベン�
   import { shallow } from 'enzyme'
 ```
 
-**フック**  
+**フック**   
 必要なprops(親から渡ってくるデータ) を設定して、componentに渡す。  
 ```js
   describe('(Componnet) Counter', () => {
