@@ -17,23 +17,16 @@ $ npm install
 $ npm start
 ```
 ## 使うLibrary
-**React**: javascript library by Facebook. component, virtual dom etc.
-
-**Redux**: データの流れを一方向にする
-
-**Enzyme**: React専用のテストツール
-  - reactで対象のコンポーネントをテスト
-  - render, shallow, and mount
-
-**Mocha**: テストランナー。describe() and it()
-
-**Chai**: アサーションライブラリ。expect, etc.
-
-**Sinon**:テストダブル. テスト対象外の機能などを擬似的に再現
-
+**React**: javascript library by Facebook. component, virtual dom etc.  
+**Redux**: データの流れを一方向にする  
+**Enzyme**: React専用のテストツール  
+  - reactで対象のコンポーネントをテスト  
+  - render, shallow, and mount  
+**Mocha**: テストランナー。describe() and it()  
+**Chai**: アサーションライブラリ。expect, etc.  
+**Sinon**:テストダブル. テスト対象外の機能などを擬似的に再現  
 **Karma**:テスト実行環境。on node.js
-
-**Phantom**:コマンド（terminal）でブラウザを実行できる環境のこと。
+**Phantom**:コマンド（terminal）でブラウザを実行できる環境のこと。  
 
 ## Test
 
@@ -60,12 +53,12 @@ $ (Component) Counter
     ✖ Renders an duck image (skipped)
 ```
 
-## Test HomeView.js
+## Test HomeView.js  
 
-open HomeView.js (src/routes/Home/components/HomeView.js)
-open HomeView.spec.js (tests/routes/Home/components/HomeView.js)
+open HomeView.js (src/routes/Home/components/HomeView.js)  
+open HomeView.spec.js (tests/routes/Home/components/HomeView.js)  
 
-enyzmeの`render`メソッドを使ってcomponent のrenderテスト
+enyzmeの`render`メソッドを使ってcomponent のrenderテスト  
 
 **必要なものをimport**
 ```js
@@ -88,8 +81,8 @@ beforeEach: 毎回のテストがされる前に呼ばれる。
   })
 ```
 
-**レンダーテスト**
-elementのtagとtextを使って、renderされたかをチェック
+**レンダーテスト**  
+elementのtagとtextを使って、renderされたかをチェック  
 ```js
   describe('(Componnet) Home', () => {
     ...
@@ -133,10 +126,10 @@ $ (Component) Counter
 
 ## Test Counter.js
 
-open Counter.js (src/routes/Home/components/Counter.js)
-open Counter.spec.js (tests/routes/Home/components/Counter.js)
+open Counter.js (src/routes/Home/components/Counter.js)  
+open Counter.spec.js (tests/routes/Home/components/Counter.js)  
 
-enzymeのshallowメソッドを使って、componentのレンダーとイベントのテスト
+enzymeのshallowメソッドを使って、componentのレンダーとイベントのテスト  
 
 **必要なものをimport**
 ```js
@@ -147,8 +140,8 @@ enzymeのshallowメソッドを使って、componentのレンダーとイベン�
   import { shallow } from 'enzyme'
 ```
 
-**フック**
-必要なprops(親から渡ってくるデータ) を設定して、componentに渡す。
+**フック**  
+必要なprops(親から渡ってくるデータ) を設定して、componentに渡す。  
 ```js
   describe('(Componnet) Counter', () => {
     let _props, _wrapper
@@ -165,9 +158,9 @@ enzymeのshallowメソッドを使って、componentのレンダーとイベン�
   })
 ```
 
-**レンダーテスト**
-ここでもelementのタグなどを使ってrenderされたかをチェック。
-上で渡したpropsもチェック。
+**レンダーテスト**  
+ここでもelementのタグなどを使ってrenderされたかをチェック。  
+上で渡したpropsもチェック。  
 
 ```js
   describe('(Componnet) Counter', () => {
@@ -193,8 +186,8 @@ enzymeのshallowメソッドを使って、componentのレンダーとイベン�
   })
 ```
 
-**イベントテスト**
-実際にクリックイベントをシミュレートして、呼ばれるべき関数が呼ばれてるかテスト。
+**イベントテスト**  
+実際にクリックイベントをシミュレートして、呼ばれるべき関数が呼ばれてるかテスト。  
 increment
 ```js
   describe('increment', () => {
