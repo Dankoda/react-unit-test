@@ -22,6 +22,7 @@ $ npm start
 **Enzyme**: React専用のテストツール  
   - reactで対象のコンポーネントをテスト  
   - render, shallow, and mount  
+
 **Mocha**: テストランナー。describe() and it()  
 **Chai**: アサーションライブラリ。expect, etc.  
 **Sinon**:テストダブル. テスト対象外の機能などを擬似的に再現  

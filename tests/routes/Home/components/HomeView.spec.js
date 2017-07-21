@@ -1,7 +1,6 @@
 describe('(Componnet) Home', () => {
   let component
   beforeEach(() => {
-    // component = render(<Home />)
   })
 
   it('home test', () => {
