@@ -1,7 +1,7 @@
 # React Unit Test
 
 ## Requirements
-* node `4.2.2`
+* node `^4.2.2`
 * npm `^3.0.0`
 
 ## Installation
@@ -70,7 +70,7 @@ enyzmeの`render`メソッドを使ってcomponent のrenderテスト
 ```
 
 **フック**  
-beforeEach: 毎回のテストがされる前に呼ばれる。  
+beforeEach: 毎回、1つ1つのテストが実行される前に呼ばれる。
 ```js
   describe('(Componnet) Home', () => {
     let _wrapper
