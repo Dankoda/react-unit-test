@@ -9,7 +9,7 @@
 ```bash
 $ git clone https://github.com/Dankoda/react-unit-test <my-project-name>
 $ cd <my-project-name>
-$ node -v # should be v4.2.2 if not nvm use v4.2.2
+$ node -v # should be at least v4.2.2 if not nvm use v4.2.2 or higher
 ```
 
 ```bash

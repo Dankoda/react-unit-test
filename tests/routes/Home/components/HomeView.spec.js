@@ -1,5 +1,5 @@
 describe('(Componnet) Home', () => {
-  let component
+  let _wrapper
   beforeEach(() => {
   })
 
