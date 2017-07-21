@@ -26,7 +26,7 @@ $ npm start
 **Mocha**: テストランナー。describe() and it()  
 **Chai**: アサーションライブラリ。expect, etc.  
 **Sinon**:テストダブル. テスト対象外の機能などを擬似的に再現  
-**Karma**:テスト実行環境。on node.js
+**Karma**:テスト実行環境。on node.js  
 **Phantom**:コマンド（terminal）でブラウザを実行できる環境のこと。  
 
 ## Test
